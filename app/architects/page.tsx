@@ -130,7 +130,9 @@ export default function ArchitectsPage() {
 
   return (
     <div className="w-full max-w-5xl mx-auto py-8 px-2 md:px-0">
-      <RequireAuth />
+      <RequireAuth>
+      <>
+      
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-3xl font-extrabold text-blue-700 dark:text-blue-300">Architects</h1>
         {isAdmin && (
@@ -278,6 +280,8 @@ export default function ArchitectsPage() {
           animation: fadeIn 0.3s ease;
         }
       `}</style>
+      </>>
+      </RequireAuth>
     </div>
   );
 }
