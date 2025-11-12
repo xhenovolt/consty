@@ -280,7 +280,7 @@ export default function ArchitectsPage() {
           animation: fadeIn 0.3s ease;
         }
       `}</style>
-      </>>
+      </>
       </RequireAuth>
     </div>
   );
